@@ -10,14 +10,20 @@ execute:
   warning: FALSE
 ---
 
-<!-- Project Title <project label> -->
+<!-- <project identifier> -->
 
 
 ```{r}
 #| label: identification
 #| echo: false
-prjct <- 'client_name'
+prjct <- 'identifier'
 ```
+
+::: {.callout-important .disclaimer title='Disclaimer'}
+Current draft describes work in progress and its content should be treated as such.  
+The researcher should remain skeptical to ensure the analyses are appropriate.  
+`{r} R.version.string`
+:::
 
 ```{r}
 #| label: if_qmd_to_r
@@ -27,48 +33,29 @@ source(paste0(prjct,".r"))
 # system(paste0('quarto render ',prjct,'.qmd'))
 ```
 
-<!-- RUN:: libraries -->
+<!-- packages -->
 
 ```{r}
 #| label: x_functions
 #| echo: false
-pckgs <- c('tidyverse')
+pckgs <- c('tidyverse','gt')
 donotshow <- purrr::map(pckgs, library, character.only=TRUE)
 ```
-
-<!-- RUN:: data -->
-```{r}
-#| label: data_read_rename
-#| eval: false
-mppng <- tribble(~output,~input,
-"new1","old1",
-"new2","old2")
-dta <- dta %>% rename(!!! setNames(mppng$input, mppng$output))
-
-# renaming <- c(new1="old1", new2="old2")
-# dta <- dta |> rename_with(~names(renaming),all_of(as.character(renaming)))
-```
-
-::: {.callout-important .disclaimer title='Disclaimer'}
-Current draft describes work in progress and its content should be treated as such.  
-The researcher should remain skeptical to ensure the analyses are appropriate.  
-`{r} R.version.string`
-:::
-
-<!--
-::: {.callout-note title='Goal'}
-:::
-
-::: {.callout-tip title='Conclusion'}
-:::
--->
-
-## Data
 
 This template can be used for SQUARE drafts.  
 The _xtra folder contains the square logo and scss file for formatting.  
 
+## Data
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan nunc non est suscipit rutrum. Morbi quis pharetra ex, vel sollicitudin est. Ut aliquam finibus ex, quis accumsan ante malesuada vitae. Nam non ultricies enim, id aliquet erat. Duis venenatis ipsum vel est tincidunt, ac dignissim augue imperdiet. In hac habitasse platea dictumst. Pellentesque vel risus felis. Suspendisse at tempus orci. Integer eu enim non lorem eleifend semper at vel metus. Nam commodo nibh nisi, ut pharetra neque semper a. Sed sagittis ligula ac condimentum bibendum. Cras posuere aliquet felis, sit amet volutpat libero accumsan non. Donec luctus magna non imperdiet tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis vel sapien mollis, molestie augue ut, dapibus tortor.
+
+Curabitur lobortis, risus non fringilla blandit, dolor justo vehicula urna, ac dictum orci ante eget ipsum. Donec facilisis mattis massa. Morbi fermentum tempor tellus, nec malesuada augue dignissim vel. Duis bibendum tincidunt libero, nec ornare mi placerat eget. Sed libero lectus, vestibulum in consequat a, bibendum at ligula. Sed dui augue, ullamcorper pulvinar lacus eget, posuere interdum libero. In pellentesque augue non euismod tempus.
+
 ## Analysis
+
+Morbi eros ex, semper at euismod sit amet, consectetur et lorem. Donec ac aliquam turpis. Phasellus porttitor sem quis euismod rhoncus. Sed commodo at lacus sed accumsan. Cras in commodo nunc. Vestibulum non odio vitae quam elementum viverra ut nec odio. Phasellus pulvinar nibh eget metus dapibus porttitor.
+
+Proin varius fringilla dui, ac laoreet nisi iaculis fermentum. Sed pharetra, nulla non placerat pretium, risus tellus suscipit dui, quis sodales nisi nunc vel nisi. Curabitur elit tellus, consequat vel tincidunt ut, mollis id arcu. Integer tempor tortor a placerat imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec at magna vitae ipsum maximus imperdiet. Etiam vel pretium ex, nec eleifend libero. Ut libero urna, porttitor ut diam ut, aliquet viverra dolor. Mauris in orci vulputate, mattis libero ut, aliquet neque. Cras eget lorem sed libero posuere auctor.
 
 ## Conclusion
 

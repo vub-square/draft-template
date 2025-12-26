@@ -51,7 +51,7 @@ format:
         \pagestyle{fancy}
         \setlength\headheight{46.3pt}
         \fancyhead[L]{\includegraphics[height=.7cm]{_xtra/_hdr_logo.png}}
-        \fancyfoot[L]{\textcolor{vub_blue}{wilfried.cools@vub.be}}
+        \fancyfoot[L]{\textcolor{vub_blue}{}}
         \fancyfoot[R]{\textcolor{vub_blue}{square.research.vub.be}}
 
 format-links: false
