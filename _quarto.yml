@@ -10,8 +10,9 @@ knitr:
     tidy: TRUE
 
 format:
-  html:
+  draft-template-html:
     theme: [cosmo, _xtra/square.scss]
+    draft-template: default
     embed-resources: true
     smooth-scroll: true
     fontcolor: black
