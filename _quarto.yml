@@ -10,7 +10,7 @@ knitr:
     tidy: TRUE
 
 format:
-  draft-template-html:
+  html:
     theme: [cosmo, _xtra/square.scss]
     draft-template: default
     embed-resources: true
